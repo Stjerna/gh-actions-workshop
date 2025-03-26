@@ -44,4 +44,12 @@ jobs:
 
       - name: Build
         run: npm run build
+  test_job:
+    name: Test 🧪
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test
+        run: npm run lint:check
 
