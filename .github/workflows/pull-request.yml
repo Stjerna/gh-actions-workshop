@@ -44,6 +44,15 @@ jobs:
 
       - name: Build
         run: npm run build
+  format_job:
+    name: Format 🥝
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: format check
+        run: npm run format:check
+
   test_job:
     name: Test 🧪
 
