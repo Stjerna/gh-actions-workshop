@@ -67,7 +67,7 @@ jobs:
   post-comment:
     runs-on: ubuntu-latest
 
-    needs: [job1, job2]
+    needs: [build_job, test_job]
 
     steps:
       - name: Post comment
